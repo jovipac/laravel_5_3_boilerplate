@@ -47,7 +47,7 @@ class Handler extends ExceptionHandler
 		if ($exception instanceof \Illuminate\Session\TokenMismatchException) {    
           // flash your message
 
-            \Session::flash('flash_message_important', 'Sorry, your session seems to have expired. Please try again.'); 
+            \Session::flash('message', 'Lo siento, su sesión parece haber expirado. Inténtalo de nuevo.'); 
 
             return redirect('login');
         }
